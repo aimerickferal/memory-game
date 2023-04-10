@@ -15,13 +15,21 @@
 :root {
   --black: #000000;
   --white: #ffffff;
+  --silver: #cccccc;
+  --red: #ff0000;
 }
 
 body {
   margin: 0;
   font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Roboto", sans-serif;
   text-align: left;
+  background-color: var(--silver);
+  color: var(--black);
+}
+
+.grid__image_pointer-events_none {
+  pointer-events: none;
 }
 
 /* ============================================================ */
@@ -31,6 +39,61 @@ body {
   .wrapper {
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+  }
+
+  .header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    color: var(--red);
+  }
+
+  .header h1 {
+    font-size: 1.5em;
+  }
+
+  .score,
+  .message {
+    font-size: 1em;
+  }
+
+  .score {
+    margin: 2em 0 0 0;
+  }
+
+  .message {
+    margin: 0.5em 0 2em 0;
+  }
+
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+    width: 300px;
+    height: 300px;
+    /* margin: auto; */
+  }
+
+  .grid__image {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .grid__image-check-mark {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+  }
+
+  .grid__image-check-mark_color_green {
+    filter: invert(59%) sepia(19%) saturate(7109%) hue-rotate(81deg)
+      brightness(119%) contrast(123%);
   }
 }
 
@@ -38,22 +101,45 @@ body {
 /* ============== MOBILE WITH MEDIUM SCREEN SIZE ============== */
 /* ============================================================ */
 @media screen and (min-width: 390px) {
+  /*! None */
 }
 
 /* ============================================================ */
 /* =============== MOBILE WITH LARGE SCREEN SIZE ============== */
 /* ============================================================ */
 @media screen and (min-width: 428px) {
+  /*! None */
 }
 
 /* ============================================================ */
 /* ========================== TABLET ========================== */
 /* ============================================================ */
 @media screen and (min-width: 768px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .score,
+  .message {
+    font-size: 1.5em;
+  }
+
+  .grid {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 /* ============================================================ */
 /* ========================== DESKTOP ========================= */
 /* ============================================================ */
 @media screen and (min-width: 992px) {
+  .header h1 {
+    font-size: 2.5em;
+  }
+
+  .score,
+  .message {
+    font-size: 2em;
+  }
 }
