@@ -1,8 +1,20 @@
-# Memory Game
+# **Memory Game**
 
 The **Memory Game** project is a game that can help you to train your memory.
 
-## 📜 Game's Rules
+## **Setup**
+
+- HTML 5
+- CSS 3
+- JavaScript ECMAScript 2020
+
+To use the projet you have to follow this steps:
+
+- Git clone the `dev` branch of the repository
+- Go to the `template` folder
+- Open the `index.html` file
+
+## **Game's Rules**
 
 Click on two of the cards to see the color they contain :
 
@@ -11,25 +23,6 @@ Click on two of the cards to see the color they contain :
 
 The game ends once all pairs have been found.
 
-## 🧰 **Stack**
-
-- **Languages**
-
-  - Front  
-    ![](setup/images/html.svg) ![](setup/images/css.svg) ![](setup/images/javascript.svg)
-
-- **Source-Code Editor**
-
-  ![](setup/images/visual-studio-code.svg)
-
-## ⚙️ Set Up
-
-To use the projet you have to follow this steps :
-
-- Git clone the `dev` branch of the repository
-- Go to the `template` folder
-- Open the `index.html` file
-
-## 👀 Glimpse
+## **Glimpse**
 
 https://aimerickferal.com/projects/memory-game
